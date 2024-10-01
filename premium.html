@@ -10,12 +10,17 @@
 <body>
 
     <div class="card">
-        <ul class="card-info card-shadow">
+        <ul class="card-info card-shadow" id="card-list">
           <li class="card-header">Premium</li>
-          <li class="card-item"><span>50GB</span> Storage</li>
+          <card-item
+              v-for="li in lis"
+              v-bind:li="li"
+              v-bind:style="styleobj"
+          ></card-item>
+          <!-- <li class="card-item"><span>50GB</span> Storage</li>
           <li class="card-item"><span>50</span> Emails</li>
           <li class="card-item"><span>50</span> Domains</li>
-          <li class="card-item"><span>Endless</span> Support</li>
+          <li class="card-item"><span>Endless</span> Support</li> -->
           <li class="card-item">
             <h2 class="card-wide">$ 50</h2>
             <span class="card-opacity">per month</span>
@@ -25,6 +30,7 @@
           </li>
         </ul>
       </div>
-    
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

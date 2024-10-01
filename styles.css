@@ -19,10 +19,6 @@ body {
   border: 1px solid #afaeae !important;
   text-align: center;
 }
-.card .card-info li {
-  padding: 8px 16px;
-  border-bottom: 1px solid #ddd;
-}
 .card .card-info li:last-child {
   border-bottom: none;
 }
